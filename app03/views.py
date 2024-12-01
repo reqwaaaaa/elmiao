@@ -83,7 +83,7 @@ def upload(request):
     if request.method == 'POST' and request.FILES.get('file'):
         uploaded_file = request.FILES['file']
         filename = uploaded_file.name
-        save_path = os.path.join('D:\\Project\\super\\vue_super', 'src', 'static', filename)
+        save_path = os.path.join('C:\\Users\\86138\\Desktop\\super\\vue_super', 'src', 'static', filename)
         with open(save_path, 'wb+') as destination:
             for chunk in uploaded_file.chunks():
                 destination.write(chunk)
@@ -218,7 +218,7 @@ def uploadHead(request):
     if request.method == 'POST' and request.FILES.get('file'):
         uploaded_file = request.FILES['file']
         filename = uploaded_file.name
-        save_path = os.path.join('D:\\Project\\super\\vue_super', 'src', 'static', filename)
+        save_path = os.path.join('C:\\Users\\86138\\Desktop\\super\\vue_super', 'src', 'static', filename)
         with open(save_path, 'wb+') as destination:
             for chunk in uploaded_file.chunks():
                 destination.write(chunk)
