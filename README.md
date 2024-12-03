@@ -1,7 +1,5 @@
 # 基于 Django 的外卖管理系统
 
-本项目是一个使用 Django 框架和 MySQL 数据库实现的外卖管理系统。系统设计了多种用户角色，包括管理员、外卖员、商铺管理者和学生。后端通过 Django 提供各类功能接口，包括商铺管理、食品管理、订单管理、评价系统以及通知管理。
-
 ## 目录
 - [功能模块](#功能模块)
   - [管理员模块](#管理员模块)
@@ -12,6 +10,7 @@
   - [通知模块](#通知模块)
 - [技术栈](#技术栈)
 - [接口概述](#接口概述)
+- [前端链接](#前端链接)
 
 ## 功能模块
 
@@ -111,32 +110,6 @@
 - **密码加密**：使用 `hashlib` 模块对密码进行 SHA-256 加密
 - **其他依赖**：Django 提供的中间件如 CSRF 防护等
 
-## 安装步骤
-1. **克隆仓库**：
-    ```sh
-    git clone <repository-url>
-    cd delivery-management-system
-    ```
-2. **创建虚拟环境**：
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # Windows 使用 `venv\Scripts\activate`
-    ```
-3. **安装依赖**：
-    ```sh
-    pip install -r requirements.txt
-    ```
-4. **配置数据库**：
-    - 打开 `settings.py` 文件，配置 MySQL 数据库连接信息（用户名、密码、主机、数据库名称等）。
-5. **应用数据库迁移**：
-    ```sh
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-6. **启动服务器**：
-    ```sh
-    python manage.py runserver
-    ```
 
 ## 接口概述
 以下是项目后端各模块的主要 API 端点：
@@ -173,4 +146,6 @@
    - `/add/notice`：发布新通知。
    - `/get/notice`：获取最新通知。
 
+## 前端链接
+[***前端***](https://github.com/reqwaaaaa/elmiao_Vue)
 ---
