@@ -147,5 +147,5 @@
    - `/get/notice`：获取最新通知。
 
 ## 前端链接
-[***前端***](https://github.com/reqwaaaaa/elmiao_Vue)
+[***Vue***](https://github.com/reqwaaaaa/elmiao_Vue)
 ---
